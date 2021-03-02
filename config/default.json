@@ -1,3 +1,6 @@
 {
-    "mangoURI": "mongodb+srv://gali123:gali123@devconnector.sibc5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mangoURI": "mongodb+srv://gali123:gali123@devconnector.sibc5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken",
+    "githubClientId": "bd94ae470b01798be6a6",
+    "githubSecret": "01fb2883b15c807034a5d4dc66869cf439c1a9a3"
 }

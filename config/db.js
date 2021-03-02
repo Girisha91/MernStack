@@ -10,7 +10,7 @@ const connectDB = async () => {
     // try catch block if there is any error 
     // for error handling
     try {
-        await mongoose.connect(db, { useNewUrlParser: true });
+        await mongoose.connect(db, { useNewUrlParser: true, createIndexes: true, useFindAndModify: false });
         console.log("mongo db is connected")
     } catch (err) {
         console.error("Unable to connect to db", err);

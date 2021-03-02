@@ -3,6 +3,9 @@ const cdb = require('./config/db');
 const app = express();
 // should connect db after express
 cdb();
+
+// initialize middleware
+app.use(express.json({ extended: false }));
 app.get('/', (req, res) => res.send('API running'));
 
 //define routes
