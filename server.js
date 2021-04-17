@@ -1,9 +1,17 @@
 const express = require('express');
 const cdb = require('./config/db');
+var cors = require('cors')
 const app = express();
+
+app.use(cors('http://localhost:5000', 'http://localhost:3000'))
 // should connect db after express
 cdb();
 
+app.use(
+    express.urlencoded({
+        extended: true
+    })
+)
 // initialize middleware
 app.use(express.json({ extended: false }));
 app.get('/', (req, res) => res.send('API running'));
