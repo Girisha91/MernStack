@@ -30,7 +30,7 @@ export const Login = () => {
 
             const body = JSON.stringify(newUser);
 
-            const res = await axios.post('/api/auth', body, config);
+            const res = await axios.post('/api/auth', newUser, config);
             console.log(res.data)
         } catch (err) {
             console.log(err);
